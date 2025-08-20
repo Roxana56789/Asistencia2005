@@ -65,7 +65,7 @@ public class DocenteGrupoController {
     // ----------- EDITAR --------------
     @GetMapping("/edit/{id}")
     public String edit(@PathVariable Integer id, Model model) {
-        Docente docenteGrupo = docenteGrupoService.buscarPorId(id);
+        DocenteGrupo docenteGrupo = docenteGrupoService.buscarPorId(id);
         model.addAttribute("docenteGrupo", docenteGrupo);
         model.addAttribute("docentes", docenteService.obtenerTodos());
         model.addAttribute("grupos", grupoService.ObtenerTodos());
@@ -76,7 +76,7 @@ public class DocenteGrupoController {
     // ----------- VER (solo lectura) --------------
     @GetMapping("/view/{id}")
     public String view(@PathVariable Integer id, Model model) {
-        Docente docenteGrupo = docenteGrupoService.buscarPorId(id);
+        DocenteGrupo docenteGrupo = docenteGrupoService.buscarPorId(id);
         model.addAttribute("docenteGrupo", docenteGrupo);
         model.addAttribute("docentes", docenteService.obtenerTodos());
         model.addAttribute("grupos", grupoService.ObtenerTodos());
@@ -87,7 +87,7 @@ public class DocenteGrupoController {
     // ----------- ELIMINAR (confirmación) --------------
     @GetMapping("/delete/{id}")
     public String deleteConfirm(@PathVariable Integer id, Model model) {
-        Docente docenteGrupo = docenteGrupoService.buscarPorId(id);
+        DocenteGrupo docenteGrupo = docenteGrupoService.buscarPorId(id);
         model.addAttribute("docenteGrupo", docenteGrupo);
         model.addAttribute("docentes", docenteService.obtenerTodos());
         model.addAttribute("grupos", grupoService.ObtenerTodos());
