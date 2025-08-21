@@ -1,4 +1,4 @@
-package Seguridad;
+package esfe.com.Asistencia.Seguridad;
 
 import javax.sql.DataSource;
 

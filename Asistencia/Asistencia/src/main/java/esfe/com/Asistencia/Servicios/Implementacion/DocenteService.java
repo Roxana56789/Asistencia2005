@@ -9,8 +9,8 @@ import esfe.com.Asistencia.Repositorios.IDocenteRepository;
 import esfe.com.Asistencia.Servicios.Interfaces.IDocenteService;
 
 @Service
-public class DocenteService implements IDocenteService{
- @Autowired
+public class DocenteService  implements IDocenteService {
+    @Autowired
     private IDocenteRepository docenteRepository;
 
     @Override
